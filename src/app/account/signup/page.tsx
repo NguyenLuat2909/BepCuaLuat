@@ -105,6 +105,7 @@ export default function SignUpPage() {
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Tên thân mật của bạn"
                   className="w-full bg-transparent text-sm text-[#664226] outline-none placeholder:text-[#9F6C3E]/50"
+                  suppressHydrationWarning
                 />
               </div>
             </div>
@@ -123,6 +124,7 @@ export default function SignUpPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="ban@vidu.com"
                   className="w-full bg-transparent text-sm text-[#664226] outline-none placeholder:text-[#9F6C3E]/50"
+                  suppressHydrationWarning
                 />
               </div>
             </div>
@@ -141,6 +143,7 @@ export default function SignUpPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Tạo mật khẩu"
                   className="w-full bg-transparent text-sm text-[#664226] outline-none placeholder:text-[#9F6C3E]/50"
+                  suppressHydrationWarning
                 />
               </div>
             </div>
