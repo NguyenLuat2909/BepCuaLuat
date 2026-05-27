@@ -1,15 +1,20 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BookOpen, Mail, Lock } from "lucide-react";
 import useAuth from "@/utils/useAuth";
 
 export default function SignInPage() {
+  const [mounted, setMounted] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const { signInWithCredentials } = useAuth();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,6 +39,17 @@ export default function SignInPage() {
       setLoading(false);
     }
   };
+
+  if (!mounted) {
+    return (
+      <div
+        className="flex min-h-screen w-full items-center justify-center p-4"
+        style={{ backgroundColor: "#FAF4F1" }}
+      >
+        <div className="h-[500px] w-full max-w-5xl rounded-3xl border border-[#E9DFDA] bg-white animate-pulse" />
+      </div>
+    );
+  }
 
   return (
     <div
