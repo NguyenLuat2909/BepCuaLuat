@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bep-cua-luat
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
+      OPENCODE_API_KEY: ${OPENCODE_API_KEY}
+      OPENCODE_MODEL: ${OPENCODE_MODEL}
+    depends_on:
+      - postgres
+    networks:
+      - bep-network
+
+  postgres:
+    image: postgres:17-alpine
+    container_name: bep-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bepuser
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: bepcualuat
+    volumes:
+      - bep-pgdata:/var/lib/postgresql/data
+      - ./docs/schema.sql.txt:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    ports:
+      - "5432:5432"
+    networks:
+      - bep-network
+
+volumes:
+  bep-pgdata:
+
+networks:
+  bep-network:
+    driver: bridge
