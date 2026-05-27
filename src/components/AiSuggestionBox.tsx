@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Sparkles, Loader2, LucideIcon } from "lucide-react";
 import { toast } from "sonner";
+import ReactMarkdown from "react-markdown";
 
 interface AiSuggestionBoxProps {
   title: string;
@@ -98,10 +99,28 @@ export default function AiSuggestionBox({
         </button>
       </form>
       {response ? (
-        <div className="mt-4 whitespace-pre-wrap rounded-2xl border border-[#E9DFDA] bg-[#FAF4F1] p-4 text-sm leading-relaxed text-[#664226]">
-          {typeof response === "string"
-            ? response
-            : JSON.stringify(response, null, 2)}
+        <div className="mt-4 rounded-2xl border border-[#E9DFDA] bg-[#FAF4F1] p-4 text-sm leading-relaxed text-[#664226]">
+          {typeof response === "string" ? (
+            <ReactMarkdown
+              components={{
+                h1: ({ node, ...props }) => <h1 className="font-playfair-display font-bold text-[#664226] mt-4 mb-2 text-lg" {...props} />,
+                h2: ({ node, ...props }) => <h2 className="font-playfair-display font-semibold text-[#664226] mt-3.5 mb-1.5 text-base" {...props} />,
+                h3: ({ node, ...props }) => <h3 className="font-playfair-display font-semibold text-[#664226] mt-3 mb-1 text-base" {...props} />,
+                h4: ({ node, ...props }) => <h4 className="font-semibold text-[#664226] mt-2.5 mb-0.5 text-sm" {...props} />,
+                p: ({ node, ...props }) => <p className="mb-2 last:mb-0 leading-relaxed text-[#664226]" {...props} />,
+                ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-2.5 space-y-1 text-[#664226]" {...props} />,
+                ol: ({ node, ...props }) => <ol className="list-decimal pl-5 mb-2.5 space-y-1 text-[#664226]" {...props} />,
+                li: ({ node, ...props }) => <li className="text-sm my-0.5" {...props} />,
+                strong: ({ node, ...props }) => <strong className="font-semibold text-[#664226]" {...props} />
+              }}
+            >
+              {response}
+            </ReactMarkdown>
+          ) : (
+            <pre className="overflow-x-auto whitespace-pre-wrap">
+              {JSON.stringify(response, null, 2)}
+            </pre>
+          )}
         </div>
       ) : null}
     </div>
