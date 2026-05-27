@@ -1,7 +1,4 @@
-import { GoogleGenerativeAI } from '@google/generative-ai'
 import { createClient } from '@/utils/supabase/server'
-
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '')
 
 export async function askGemini({
   system,
@@ -14,13 +11,55 @@ export async function askGemini({
   userId?: string
   feature?: string
 }) {
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-2.0-flash',
-    ...(system ? { systemInstruction: system } : {}),
-  })
+  const apiKey = process.env.OPENCODE_API_KEY || ''
+  const modelName = process.env.OPENCODE_MODEL || 'deepseek-v4-flash'
 
-  const result = await model.generateContent(prompt)
-  const content = result.response.text()
+  if (!apiKey) {
+    throw new Error('OPENCODE_API_KEY is not defined in environment variables')
+  }
+
+  const endpoints = [
+    'https://api.opencode.ai/zen/v1/chat/completions',
+    'https://opencode.ai/zen/v1/chat/completions'
+  ]
+
+  let content = ''
+  let lastError: any = null
+
+  for (const url of endpoints) {
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: modelName,
+          messages: [
+            ...(system ? [{ role: 'system', content: system }] : []),
+            { role: 'user', content: prompt }
+          ]
+        })
+      })
+
+      if (!response.ok) {
+        const errorText = await response.text()
+        throw new Error(`HTTP error ${response.status}: ${errorText}`)
+      }
+
+      const data = await response.json()
+      content = data?.choices?.[0]?.message?.content || ''
+      if (content) break // Success!
+    } catch (err: any) {
+      console.warn(`Failed to fetch from OpenCode endpoint ${url}:`, err.message)
+      lastError = err
+    }
+  }
+
+  if (!content) {
+    throw new Error(`OpenCode Zen API call failed: ${lastError?.message || 'Unknown error'}`)
+  }
 
   // Log in database
   if (userId) {
