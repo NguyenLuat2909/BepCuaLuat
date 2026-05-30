@@ -1,0 +1,68 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bep-cua-luat
+    restart: always
+    # CHỈ expose nội bộ, Nginx sẽ proxy từ localhost:3000
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
+      OPENCODE_API_KEY: ${OPENCODE_API_KEY}
+      OPENCODE_MODEL: ${OPENCODE_MODEL}
+    depends_on:
+      - postgres
+    networks:
+      - bep-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  postgres:
+    image: postgres:17-alpine
+    container_name: bep-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: bepuser
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: bepcualuat
+    volumes:
+      - bep-pgdata:/var/lib/postgresql/data
+      - ./docs/schema.sql.txt:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    # NÓ EXPOSE PORT 5432 CHỈ NỘI BỘ (127.0.0.1)
+    ports:
+      - "127.0.0.1:5432:5432"
+    networks:
+      - bep-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bepuser -d bepcualuat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bep-pgdata:
+
+networks:
+  bep-network:
+    driver: bridge

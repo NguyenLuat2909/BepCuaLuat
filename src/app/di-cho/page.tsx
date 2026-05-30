@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
   Plus,
@@ -9,6 +9,13 @@ import {
   Copy,
   RefreshCw,
   ShoppingBasket,
+  Carrot,
+  Apple,
+  Egg,
+  Milk,
+  Wheat,
+  Sparkles,
+  ShoppingBag,
 } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -18,6 +25,16 @@ import CozyPageHeader from "@/components/CozyPageHeader";
 import SoftButton from "@/components/SoftButton";
 import EmptyState from "@/components/EmptyState";
 import { GROCERY_CATEGORIES } from "@/data/constants";
+
+const CATEGORY_ICONS: Record<string, any> = {
+  rau_cu: Carrot,
+  trai_cay: Apple,
+  thit_ca_trung: Egg,
+  sua_dam: Milk,
+  ngu_coc: Wheat,
+  gia_vi: Sparkles,
+  khac: ShoppingBag,
+};
 
 export default function GroceryPage() {
   const { data: user, loading } = useUser();
@@ -143,11 +160,11 @@ export default function GroceryPage() {
 
   const handleCopy = () => {
     const lines: string[] = [];
-    lines.push("📝 Danh sách đi chợ");
+    lines.push("Danh sách đi chợ");
     for (const cat of GROCERY_CATEGORIES) {
       const list = grouped[cat.value] || [];
       if (!list.length) continue;
-      lines.push(`\n${cat.emoji} ${cat.label}`);
+      lines.push(`\n* ${cat.label}`);
       for (const it of list) {
         const tick = it.is_checked ? "[x]" : "[ ]";
         lines.push(
@@ -251,7 +268,7 @@ export default function GroceryPage() {
         >
           {GROCERY_CATEGORIES.map((c) => (
             <option key={c.value} value={c.value}>
-              {c.emoji} {c.label}
+              {c.label}
             </option>
           ))}
         </select>
@@ -289,7 +306,10 @@ export default function GroceryPage() {
                 className="rounded-3xl border border-[#E9DFDA] bg-white p-5"
               >
                 <h3 className="flex items-center gap-2 font-playfair-display text-lg font-semibold text-[#664226]">
-                  <span className="text-xl">{cat.emoji}</span> {cat.label}
+                  <span className="text-[#9F6C3E]">
+                    {React.createElement(CATEGORY_ICONS[cat.value] || ShoppingBag, { size: 20, strokeWidth: 1.5 })}
+                  </span>{" "}
+                  {cat.label}
                   <span className="ml-auto text-xs text-[#9F6C3E]/70">
                     {list.filter((i) => i.is_checked).length}/{list.length}
                   </span>

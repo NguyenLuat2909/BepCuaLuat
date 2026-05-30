@@ -22,6 +22,7 @@ export default function AIPage() {
   const { data: user, loading } = useUser();
   const [planLoading, setPlanLoading] = useState(false);
   const [planText, setPlanText] = useState<string | null>(null);
+  const [planData, setPlanData] = useState<any[] | null>(null);
   const [goal, setGoal] = useState("ăn healthy");
   const router = useRouter();
 
@@ -34,15 +35,61 @@ export default function AIPage() {
   const handleGeneratePlan = async () => {
     setPlanLoading(true);
     setPlanText(null);
+    setPlanData(null);
     try {
       const res = await fetch("/api/ai/generate-meal-plan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ goal }),
       });
-      const j = await res.json();
+      
+      const text = await res.text();
+      let j;
+      try {
+        j = JSON.parse(text);
+      } catch (err) {
+        console.error("Server returned non-JSON response:", text);
+        throw new Error(`Server returned HTML error (Status ${res.status}). See console for details.`);
+      }
+
       if (!res.ok) throw new Error(j.error || "Lỗi");
-      setPlanText(j.content || JSON.stringify(j.plan, null, 2));
+
+      let parsedPlan = null;
+      if (j.plan) {
+        if (Array.isArray(j.plan)) {
+          parsedPlan = j.plan;
+        } else if (typeof j.plan === 'object' && Array.isArray(j.plan.plan)) {
+          parsedPlan = j.plan.plan;
+        }
+      }
+
+      // Hỗ trợ parse JSON trực tiếp ở Client nếu Server trả về content là chuỗi JSON
+      if (!parsedPlan && j.content) {
+        try {
+          const textVal = j.content;
+          const a = textVal.indexOf("{");
+          const b = textVal.indexOf("[");
+          const s = a === -1 ? b : (b === -1 ? a : Math.min(a, b));
+          const e = Math.max(textVal.lastIndexOf("}"), textVal.lastIndexOf("]"));
+          if (s !== -1 && e !== -1 && s < e) {
+            const slice = textVal.slice(s, e + 1);
+            const parsed = JSON.parse(slice);
+            if (Array.isArray(parsed)) {
+              parsedPlan = parsed;
+            } else if (parsed && Array.isArray(parsed.plan)) {
+              parsedPlan = parsed.plan;
+            }
+          }
+        } catch (err) {
+          console.warn("Client-side parse failed:", err);
+        }
+      }
+
+      if (parsedPlan) {
+        setPlanData(parsedPlan);
+      } else {
+        setPlanText(j.content || JSON.stringify(j.plan, null, 2));
+      }
     } catch (e: any) {
       toast.error(e.message || "Lỗi");
     } finally {
@@ -154,7 +201,7 @@ export default function AIPage() {
               disabled={planLoading}
             >
               <Sparkles size={14} />
-              {planLoading ? "Đang tạo..." : "Tạo thực đơn"}
+              {planLoading ? "Đang tạo..." : "Tạo thực đơn (Bảng)"}
             </SoftButton>
           </div>
           {planText ? (
@@ -174,6 +221,35 @@ export default function AIPage() {
               >
                 {planText}
               </ReactMarkdown>
+            </div>
+          ) : null}
+
+          {planData ? (
+            <div className="mt-4 overflow-hidden rounded-2xl border border-[#E9DFDA] bg-white">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse text-left text-sm text-[#664226]">
+                  <thead>
+                    <tr className="border-b border-[#E9DFDA] bg-[#F3EAE4] text-xs font-semibold uppercase tracking-wider text-[#9F6C3E]">
+                      <th className="p-4 font-semibold">Thứ / Ngày</th>
+                      <th className="p-4 font-semibold">Bữa sáng 🍳</th>
+                      <th className="p-4 font-semibold">Bữa trưa 🍲</th>
+                      <th className="p-4 font-semibold">Bữa tối 🍚</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[#E9DFDA]">
+                    {planData.map((day, idx) => (
+                      <tr key={day.day_of_week || idx} className="hover:bg-[#FAF4F1]/50 transition-colors">
+                        <td className="p-4 font-medium text-[#9F6C3E] whitespace-nowrap bg-[#FAF4F1]/30">
+                          {day.day_label || `Thứ ${day.day_of_week + 1}`}
+                        </td>
+                        <td className="p-4">{day.meals?.sang || day.meals?.breakfast || '-'}</td>
+                        <td className="p-4">{day.meals?.trua || day.meals?.lunch || '-'}</td>
+                        <td className="p-4">{day.meals?.toi || day.meals?.dinner || '-'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           ) : null}
         </div>

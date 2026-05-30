@@ -1,0 +1,305 @@
+Found 76 candidates:
+LogLine: 211 | Type: VIEW_FILE | Lines: 78 | Garbage: False | Len: 3628
+  First: 1: # BÁO CÁO ĐỒNG ÁN: XÂY DỰNG ỨNG DỤNG QUẢN LÝ CÔNG THỨC NẤU ĂN VÀ LẬP KẾ HOẠCH THỰC ĐƠN THÔNG MINH VỚI AI TÍCH HỢP CÔNG NGHỆ CLOUD
+  Last : 800: PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) mã nguồn mở, tuân theo chuẩn SQL.
+--------------------------------------------------------------------------------
+LogLine: 221 | Type: VIEW_FILE | Lines: 100 | Garbage: False | Len: 3867
+  First: 2000: 
+  Last : 2400:   it('should calculate total cost correctly', () => {
+--------------------------------------------------------------------------------
+LogLine: 223 | Type: VIEW_FILE | Lines: 91 | Garbage: False | Len: 4070
+  First: 2400:   it('should calculate total cost correctly', () => {
+  Last : 2800: 
+--------------------------------------------------------------------------------
+LogLine: 225 | Type: VIEW_FILE | Lines: 114 | Garbage: False | Len: 3943
+  First: 2800: 
+  Last : 3226: 
+--------------------------------------------------------------------------------
+LogLine: 235 | Type: VIEW_FILE | Lines: 55 | Garbage: False | Len: 3526
+  First: 1: # BÁO CÁO ĐỒNG ÁN: XÂY DỰNG ỨNG DỤNG QUẢN LÝ CÔNG THỨC NẤU ĂN VÀ LẬP KẾ HOẠCH THỰC ĐƠN THÔNG MINH VỚI AI TÍCH HỢP CÔNG NGHỆ CLOUD
+  Last : 100: | PWA | Progressive Web App | Ứng dụng web tiến bộ |
+--------------------------------------------------------------------------------
+LogLine: 247 | Type: VIEW_FILE | Lines: 41 | Garbage: False | Len: 2112
+  First: 910: Prompt: "Phân tích hình ảnh công thức này"
+  Last : 950: - **Accuracy**: Có thể không accurate 100%
+--------------------------------------------------------------------------------
+LogLine: 251 | Type: VIEW_FILE | Lines: 45 | Garbage: False | Len: 2089
+  First: 2916:       subscription?.unsubscribe();
+  Last : 2960:     const prompt = `Based on these ingredients: ${ingredients.join(', ')}, 
+--------------------------------------------------------------------------------
+LogLine: 253 | Type: VIEW_FILE | Lines: 26 | Garbage: False | Len: 1782
+  First: 2950: import { GoogleGenerativeAI } from '@google/generative-ai';
+  Last : 2975:       { success: false, message: error.message },
+--------------------------------------------------------------------------------
+LogLine: 255 | Type: VIEW_FILE | Lines: 16 | Garbage: False | Len: 998
+  First: 2975:       { success: false, message: error.message },
+  Last : 2990: CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+--------------------------------------------------------------------------------
+LogLine: 261 | Type: VIEW_FILE | Lines: 46 | Garbage: False | Len: 2120
+  First: 2350:           
+  Last : 2395: 
+--------------------------------------------------------------------------------
+LogLine: 263 | Type: VIEW_FILE | Lines: 46 | Garbage: False | Len: 2220
+  First: 2390: # Login
+  Last : 2435:     
+--------------------------------------------------------------------------------
+LogLine: 267 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 1162
+  First: 2375:         </div>
+  Last : 2395:       { name: 'Tomato', price: 10000, quantity: 2 },
+--------------------------------------------------------------------------------
+LogLine: 273 | Type: VIEW_FILE | Lines: 56 | Garbage: False | Len: 2065
+  First: 2140: # Production build
+  Last : 2195:     restart: unless-stopped
+--------------------------------------------------------------------------------
+LogLine: 275 | Type: VIEW_FILE | Lines: 15 | Garbage: False | Len: 1117
+  First: 2196:     healthcheck:
+  Last : 2210:       - "5432:5432"
+--------------------------------------------------------------------------------
+LogLine: 277 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 1184
+  First: 2210:       - "5432:5432"
+  Last : 2230: import { createClient } from '@/lib/supabase/server';
+--------------------------------------------------------------------------------
+LogLine: 281 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 1201
+  First: 2165: 
+  Last : 2185: export async function GET(request: NextRequest) {
+--------------------------------------------------------------------------------
+LogLine: 285 | Type: VIEW_FILE | Lines: 71 | Garbage: False | Len: 3049
+  First: 3180:   is_purchased BOOLEAN DEFAULT FALSE,
+  Last : 3250: # Dependencies
+--------------------------------------------------------------------------------
+LogLine: 287 | Type: VIEW_FILE | Lines: 51 | Garbage: False | Len: 2058
+  First: 3250: # Dependencies
+  Last : 3300:     environment:
+--------------------------------------------------------------------------------
+LogLine: 289 | Type: VIEW_FILE | Lines: 70 | Garbage: False | Len: 2903
+  First: 3300:     environment:
+  Last : 3369: 
+--------------------------------------------------------------------------------
+LogLine: 293 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 1289
+  First: 3210: '[{"name":"Bò","quantity":500,"unit":"g"},{"name":"Bánh phở","quantity":300,"unit":"g"}]',
+  Last : 3230:     "type-check": "tsc --noEmit",
+--------------------------------------------------------------------------------
+LogLine: 301 | Type: VIEW_FILE | Lines: 26 | Garbage: False | Len: 2725
+  First: 150: 
+  Last : 175: 
+--------------------------------------------------------------------------------
+LogLine: 305 | Type: VIEW_FILE | Lines: 11 | Garbage: False | Len: 1309
+  First: 165: 
+  Last : 175: 
+--------------------------------------------------------------------------------
+LogLine: 314 | Type: VIEW_FILE | Lines: 31 | Garbage: False | Len: 1722
+  First: 433: 
+  Last : 463: Kiến trúc Client-Server là một mô hình phổ biến trong phát triển ứng dụng web:
+--------------------------------------------------------------------------------
+LogLine: 319 | Type: VIEW_FILE | Lines: 26 | Garbage: False | Len: 1893
+  First: 381: | Tiêu chí | Next.js + React | Django + Vue | Laravel + Blade | Spring Boot + Angular |
+  Last : 406: 2. **Gợi ý công thức bằng AI**: 
+--------------------------------------------------------------------------------
+LogLine: 326 | Type: VIEW_FILE | Lines: 17 | Garbage: False | Len: 2268
+  First: 654: 4. Certbot gửi mã xác thực ACME Challenge, máy chủ Let's Encrypt truy cập vào `http://luat.tech/.well-known/acme-challenge/` để kiểm tra quyền sở hữu. Sau khi xác thực thành công, tệp tin chứng chỉ được tạo và lưu trữ an toàn tại thư mục `/etc/letsencrypt/live/luat.tech/`.
+  Last : 670: - **Kiến trúc DevOps chuẩn hóa**: Việc container hóa bằng Docker giúp hệ thống cực kỳ dễ nâng cấp, cài đặt và bảo trì.
+--------------------------------------------------------------------------------
+LogLine: 332 | Type: VIEW_FILE | Lines: 46 | Garbage: False | Len: 3354
+  First: 1: # TRƯỜNG ĐẠI HỌC ĐÀ LẠT
+  Last : 100: Thứ nhất, người dùng thường tốn nhiều thời gian hàng ngày cho câu hỏi "Hôm nay ăn gì?". Việc lựa chọn thực đơn không có sự chuẩn bị trước dẫn đến việc lặp lại các món ăn nhàm chán hoặc không cân bằng được hàm lượng dinh dưỡng cần thiết cho cơ thể.
+--------------------------------------------------------------------------------
+LogLine: 340 | Type: VIEW_FILE | Lines: 41 | Garbage: False | Len: 3549
+  First: 200: - Giới thiệu công nghệ: REST (Representational State Transfer) là một phong cách kiến trúc thiết kế API sử dụng các phương thức HTTP tiêu chuẩn để truyền tải dữ liệu giữa Client và Server.
+  Last : 400: 
+--------------------------------------------------------------------------------
+LogLine: 342 | Type: VIEW_FILE | Lines: 37 | Garbage: False | Len: 3666
+  First: 401: ### 7.4. AI hỗ trợ gỡ lỗi, kiểm thử và viết tài liệu
+  Last : 710: 
+--------------------------------------------------------------------------------
+LogLine: 346 | Type: VIEW_FILE | Lines: 53 | Garbage: False | Len: 3996
+  First: 1: # Implementation Plan - Restructure Academic Project Report (BAOCAO_DETAI.md)
+  Last : 101: 
+--------------------------------------------------------------------------------
+LogLine: 350 | Type: VIEW_FILE | Lines: 22 | Garbage: False | Len: 3344
+  First: 101: Thứ hai, tình trạng lãng phí thực phẩm diễn ra phổ biến. Người tiêu dùng mua sắm nguyên liệu theo cảm tính mà không có kế hoạch sử dụng cụ thể, dẫn đến việc nhiều nguyên liệu tươi sống bị hư hỏng trong tủ lạnh và buộc phải vứt bỏ. Ngược lại, có những lúc tủ lạnh còn dư thừa một số nguyên liệu nhưng người dùng lại thiếu kiến thức ẩm thực để kết hợp chúng thành một món ăn ngon.
+  Last : 200: - Giới thiệu công nghệ: REST (Representational State Transfer) là một phong cách kiến trúc thiết kế API sử dụng các phương thức HTTP tiêu chuẩn để truyền tải dữ liệu giữa Client và Server.
+--------------------------------------------------------------------------------
+LogLine: 356 | Type: VIEW_FILE | Lines: 50 | Garbage: False | Len: 4038
+  First: 1: # Walkthrough - Deployment & Report Finalization of BepCuaLuat on AWS EC2
+  Last : 50: 
+--------------------------------------------------------------------------------
+LogLine: 361 | Type: VIEW_FILE | Lines: 15 | Garbage: False | Len: 2050
+  First: 133: - Phạm vi công nghệ: Ứng dụng Next.js (TypeScript), cơ sở dữ liệu quản trị PostgreSQL (Supabase), Container Docker, Web Server Nginx, SSL Let's Encrypt, Cloud VPS AWS EC2.
+  Last : 147: - Ưu điểm: Tối ưu hóa hình ảnh tự động, chia tách mã nguồn (Code splitting) thông minh, hỗ trợ kết hợp đa dạng các cơ chế render (SSR, CSR, ISR) trên cùng một hệ thống.
+--------------------------------------------------------------------------------
+LogLine: 369 | Type: VIEW_FILE | Lines: 27 | Garbage: False | Len: 3508
+  First: 230:        - Cửa ngõ Nginx Reverse Proxy (lắng nghe cổng 80/443).
+  Last : 280: ---
+--------------------------------------------------------------------------------
+LogLine: 371 | Type: VIEW_FILE | Lines: 28 | Garbage: False | Len: 3451
+  First: 290: 1. Client gửi request (ví dụ: `POST /api/ai/suggest-from-ingredients`) đính kèm dữ liệu danh sách nguyên liệu dưới dạng JSON.
+  Last : 330: ### 6.2. Chức năng Quản lý công thức nấu ăn (CRUD)
+--------------------------------------------------------------------------------
+LogLine: 380 | Type: VIEW_FILE | Lines: 18 | Garbage: False | Len: 2207
+  First: 232: 
+  Last : 249: 1. **Lớp cổng vào (Nginx Reverse Proxy)**: Đóng vai trò là chốt chặn đầu tiên trên máy chủ AWS EC2. Nginx nhận các yêu cầu truy cập HTTPS từ người dùng qua cổng 443, thực hiện giải mã SSL và chuyển tiếp yêu cầu HTTP nội bộ về cổng 3000 của ứng dụng.
+--------------------------------------------------------------------------------
+LogLine: 382 | Type: VIEW_FILE | Lines: 31 | Garbage: False | Len: 3335
+  First: 210: ### 4.9. Giao thức REST API
+  Last : 240:      - **VPS AWS EC2 (Môi trường máy chủ ảo):** 
+--------------------------------------------------------------------------------
+LogLine: 384 | Type: VIEW_FILE | Lines: 23 | Garbage: False | Len: 3494
+  First: 241:        - Cửa ngõ Nginx Reverse Proxy (lắng nghe cổng 80/443).
+  Last : 295: - Một kế hoạch thực đơn (`meal_plans`) liên kết với một danh sách đi chợ (`shopping_lists`), từ đó chứa nhiều nguyên liệu cần mua (`shopping_list_items`).
+--------------------------------------------------------------------------------
+LogLine: 386 | Type: VIEW_FILE | Lines: 20 | Garbage: False | Len: 2601
+  First: 296: 
+  Last : 315: ### 5.7. Luồng xác thực (Authentication Flow)
+--------------------------------------------------------------------------------
+LogLine: 391 | Type: VIEW_FILE | Lines: 15 | Garbage: False | Len: 2162
+  First: 297: 
+  Last : 311: - **Bảng `meal_plans`**: Lưu trữ thông tin tổng quan về kế hoạch thực đơn tuần của người dùng.
+--------------------------------------------------------------------------------
+LogLine: 395 | Type: VIEW_FILE | Lines: 27 | Garbage: False | Len: 3546
+  First: 255:     NextApp -- "Đồng bộ / Ghi log" --> PostgresLocal
+  Last : 295: ### 5.4. Thiết kế cơ sở dữ liệu (Database Design)
+--------------------------------------------------------------------------------
+LogLine: 397 | Type: VIEW_FILE | Lines: 64 | Garbage: False | Len: 3607
+  First: 307: 
+  Last : 370:         string quantity
+--------------------------------------------------------------------------------
+LogLine: 399 | Type: VIEW_FILE | Lines: 36 | Garbage: False | Len: 2648
+  First: 365:     }
+  Last : 400: Các yêu cầu API từ client gửi lên hệ thống được xử lý thông qua luồng khép kín:
+--------------------------------------------------------------------------------
+LogLine: 401 | Type: VIEW_FILE | Lines: 26 | Garbage: False | Len: 2838
+  First: 305: | 6 | `shopping_list_items`| Chi tiết các nguyên liệu cần mua | `id` (UUID) | `shopping_list_id` -> `shopping_lists(id)` | Có trường kiểm tra trạng thái `is_bought` |
+  Last : 330:         string email
+--------------------------------------------------------------------------------
+LogLine: 403 | Type: VIEW_FILE | Lines: 28 | Garbage: False | Len: 3432
+  First: 400: Các yêu cầu API từ client gửi lên hệ thống được xử lý thông qua luồng khép kín:
+  Last : 460: *Hướng dẫn chụp ảnh minh họa cho Hình 6.2 (Sinh viên xóa phần hướng dẫn này sau khi chèn ảnh):*
+--------------------------------------------------------------------------------
+LogLine: 410 | Type: VIEW_FILE | Lines: 18 | Garbage: False | Len: 2230
+  First: 492: - Dữ liệu đầu vào (Input): Tệp tin hình ảnh dạng PNG, JPEG, hoặc WebP (kích thước tối đa 5MB).
+  Last : 509: - Mục đích: Cung cấp cái nhìn tổng quan về thói quen ăn uống, chi tiêu ẩm thực và tiến độ thực đơn tuần của người dùng.
+--------------------------------------------------------------------------------
+LogLine: 426 | Type: VIEW_FILE | Lines: 17 | Garbage: False | Len: 2233
+  First: 547: - Dữ liệu đầu ra (Output): Quyền truy cập được chấp thuận (Allow) hoặc từ chối (Deny HTTP 403).
+  Last : 563:   2. Chọn một thực đơn tuần đã lên kế hoạch hoàn chỉnh (đã chọn các món ăn cho các bữa trong tuần).
+--------------------------------------------------------------------------------
+LogLine: 430 | Type: VIEW_FILE | Lines: 41 | Garbage: False | Len: 2457
+  First: 50:    5.1. Mô tả kiến trúc tổng thể
+  Last : 90: 
+--------------------------------------------------------------------------------
+LogLine: 432 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 2522
+  First: 415: ---
+  Last : 435: - Dữ liệu đầu ra (Output): JWT Token, thông tin cơ bản của người dùng (họ tên, email, avatar).
+--------------------------------------------------------------------------------
+LogLine: 434 | Type: VIEW_FILE | Lines: 29 | Garbage: False | Len: 3525
+  First: 290: ### 5.3. Kiến trúc Client – Server
+  Last : 330:         timestamptz created_at
+--------------------------------------------------------------------------------
+LogLine: 436 | Type: VIEW_FILE | Lines: 27 | Garbage: False | Len: 3412
+  First: 545: - Mục đích: Đảm bảo người dùng chỉ có quyền thao tác trên dữ liệu do chính mình tạo ra, ngăn chặn hành vi xâm nhập dữ liệu chéo trái phép.
+  Last : 595: 2. **Google Gemini (Zen Gateway / OpenCode AI)**: Được sử dụng để tư vấn thiết kế cấu trúc cơ sở dữ liệu quan hệ, tối ưu hóa các câu lệnh SQL phức tạp, thiết lập cấu hình container Docker và tạo dựng nội dung tài liệu kỹ thuật.
+--------------------------------------------------------------------------------
+LogLine: 440 | Type: VIEW_FILE | Lines: 41 | Garbage: False | Len: 2457
+  First: 50:    5.1. Mô tả kiến trúc tổng thể
+  Last : 90: 
+--------------------------------------------------------------------------------
+LogLine: 444 | Type: VIEW_FILE | Lines: 21 | Garbage: False | Len: 2764
+  First: 415: 
+  Last : 435: - Quy trình xử lý: Người dùng gửi yêu cầu đăng ký -> Hệ thống mã hóa thông tin tài khoản -> Gửi yêu cầu lưu trữ và tạo tài khoản trên Supabase Auth -> Người dùng nhận email kích hoạt -> Đăng nhập thành công và nhận JWT Token.
+--------------------------------------------------------------------------------
+LogLine: 448 | Type: VIEW_FILE | Lines: 33 | Garbage: False | Len: 3414
+  First: 540: 
+  Last : 590: Trong suốt quá trình phân tích, thiết kế cơ sở dữ liệu, viết mã nguồn, kiểm thử và vận hành dự án, sinh viên đã tận dụng tối đa sức mạnh của hai công cụ trợ giúp lập trình trí tuệ nhân tạo chính:
+--------------------------------------------------------------------------------
+LogLine: 456 | Type: VIEW_FILE | Lines: 17 | Garbage: False | Len: 2357
+  First: 526:   4. Chụp ảnh màn hình giao diện hiển thị từ khóa đã gõ, các nút bộ lọc đang được kích hoạt (in đậm hoặc đổi màu) và danh sách các món ăn tương ứng đã được lọc tự động hiển thị bên dưới.
+  Last : 542: - Đề xuất vị trí chèn ảnh: [HÌNH 6.7: BIỂU ĐỒ TRỰC QUAN HÓA DINH DƯỠNG VÀ ƯỚC TÍNH CHI PHÍ THỰC ĐƠN TUẦN]
+--------------------------------------------------------------------------------
+LogLine: 484 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 492 | Type: VIEW_FILE | Lines: 17 | Garbage: False | Len: 2429
+  First: 475:   5. Chụp ảnh màn hình toàn cảnh để minh chứng rõ ràng sự trùng khớp dữ liệu giữa giao diện web Bếp của Luật và nội dung tệp tin đã được tải về.
+  Last : 491:   5. **Mẹo kỹ thuật bổ sung:** Bạn có thể mở F12 (Inspect Element) của trình duyệt lên để thấy đường dẫn ảnh bắt đầu bằng domain Supabase của bạn (ví dụ: `https://[project-id].supabase.co/storage/v1/object/public/recipe-images/...`) để chứng minh dữ liệu được lưu trữ đúng chỗ, hoặc chỉ cần chụp ảnh giao diện hiển thị ảnh xem trước sắc nét là đủ.
+--------------------------------------------------------------------------------
+LogLine: 499 | Type: VIEW_FILE | Lines: 16 | Garbage: False | Len: 2222
+  First: 531: - Cách hoạt động: Kích hoạt chính sách RLS trực tiếp trên các bảng dữ liệu trong cơ sở dữ liệu Supabase PostgreSQL.
+  Last : 546: - **Mục đích:** Minh chứng tính năng tự động tổng hợp dinh dưỡng và ước tính chi phí cho thực đơn tuần của người dùng, giúp tối ưu hóa ngân sách và chế độ ăn.
+--------------------------------------------------------------------------------
+LogLine: 501 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 509 | Type: VIEW_FILE | Lines: 45 | Garbage: False | Len: 3594
+  First: 1: # -*- coding: utf-8 -*-
+  Last : 94: 
+--------------------------------------------------------------------------------
+LogLine: 571 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 575 | Type: VIEW_FILE | Lines: 45 | Garbage: False | Len: 3594
+  First: 1: # -*- coding: utf-8 -*-
+  Last : 94: 
+--------------------------------------------------------------------------------
+LogLine: 581 | Type: VIEW_FILE | Lines: 54 | Garbage: False | Len: 2550
+  First: 1: import json
+  Last : 54: 
+--------------------------------------------------------------------------------
+LogLine: 599 | Type: VIEW_FILE | Lines: 73 | Garbage: False | Len: 3764
+  First: 1: import json
+  Last : 590: Trong suốt quá trình phân tích, thiết kế cơ sở dữ liệu, viết mã nguồn, kiểm t
+--------------------------------------------------------------------------------
+LogLine: 647 | Type: VIEW_FILE | Lines: 24 | Garbage: False | Len: 1763
+  First: 1: # TRƯỜNG ĐẠI HỌC ĐÀ LẠT
+  Last : 24: Báo cáo đồ án cuối kỳ này trình bày quá trình nghiên cứu, thiết kế, phát triển và triển khai hệ thống quản lý ẩm thực thông minh mang tên "Bếp của Luật". Hệ thống được xây dựng trên nền tảng Next.js, tích hợp cơ sở dữ liệu Supabase, điều phối container qua Docker và triển khai thực tế trên máy chủ đám mây AWS EC2 với chứng chỉ SSL bảo mật. Đặc biệt, hệ thống tích hợp trí tuệ nhân tạo thông qua cổng OpenCode Zen API Gateway để cung cấp các tính năng thông minh như gợi ý công thức theo nguyên liệu sẵn có, thay thế nguyên liệu linh hoạt và lập kế hoạch thực đơn dinh dưỡng hàng tuần.
+--------------------------------------------------------------------------------
+LogLine: 649 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 667 | Type: VIEW_FILE | Lines: 20 | Garbage: False | Len: 2199
+  First: 559: - Quy trình xử lý: Người dùng nhấn nút Export -> Client chuyển đổi danh sách đối tượng nguyên liệu thành chuỗi ký tự phân cách bằng dấu phẩy (CSV) hoặc định dạng danh sách gạch đầu dòng (Text) -> Trình duyệt kích hoạt sự kiện tải tệp tin tự động về máy tính người dùng.
+  Last : 578: Trong suốt quá trình phân tích, thiết kế cơ sở dữ liệu, viết mã nguồn, kiểm thử và vận hành dự án, sinh viên đã tận dụng tối đa sức mạnh của hai công cụ trợ giúp lập trình trí tuệ nhân tạo chính:
+--------------------------------------------------------------------------------
+LogLine: 670 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 694 | Type: VIEW_FILE | Lines: 17 | Garbage: False | Len: 2117
+  First: 538: - Cách hoạt động: Tổng hợp lượng Calories, Protein, Carbs, Fat và ước tính chi phí của tất cả món ăn nằm trong kế hoạch thực đơn tuần hiện tại.
+  Last : 554: ### 6.9. Chức năng Xuất dữ liệu danh sách đi chợ (Export)
+--------------------------------------------------------------------------------
+LogLine: 696 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 698 | Type: VIEW_FILE | Lines: 45 | Garbage: False | Len: 3594
+  First: 1: # -*- coding: utf-8 -*-
+  Last : 94: 
+--------------------------------------------------------------------------------
+LogLine: 701 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 707 | Type: VIEW_FILE | Lines: 45 | Garbage: False | Len: 3594
+  First: 1: # -*- coding: utf-8 -*-
+  Last : 94: 
+--------------------------------------------------------------------------------
+LogLine: 713 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 770 | Type: VIEW_FILE | Lines: 1 | Garbage: True | Len: 1802
+  First: 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+  Last : 1: ‣剔꿆믡亜⁇郄뫡䦠䠠믡䎌쐠쎐₀ꂺ੔‣䡋䅏䌠铃䝎丠䡇믡₆䡔铃䝎吠义ਊⴭਭ⌊䈠臃⁏썃侁쐠銻쌠亁䌠邻⁉늻⌊‣썍五䠠믡䎌›썃䎁䌠铃䝎丠䡇믡₆骻⁉剔乏⁇䡐臃⁔剔芻⁎䡐뫡亦䴠믡䶀ਊ⌣‣郄믡₀썔䦀›썘如䐠믡亰⁇믡亨⁇꒻䝎儠ꊺ⁎썌₝썃五⁇䡔믡䎨丠뫡喤쐠亂嘠胃䰠뫡催䬠뫡₾佈뫡䎠⁈䡔믡䎰쐠욐亠吠썈五⁇䥍䡎吠跃䡃䠠믡傢吠썒₍啔믡₆䡎苃⁎ꂺ੏⨊匪湩⁨楶꫃⁮桴믡掱栠螻㩮⨪丠畧薻⁮쑖溃䰠궺⁴ਠ⨪썍₣醻猠湩⁨楶꫃㩮⨪㈠ㄲ㐲㘵†⨊䰪믡炛⨺‪呃㑋ⴶ䵐†⨊䌪畨썹溪渠썧溠㩨⨪䬠믡₹桴궺⁴桰뫡溧洠믡涁†⨊䬪써憳⨺‪㘴†⨊䜪ꎺ杮瘠썩溪栠냆믡溛⁧ꮺ㩮⨪䈠믡ₙ썭溴䌠듃杮渠桧믡₇桴듃杮琠湩†ਊⴭਭ⌊‣⸱吠䅒䝎䈠賃ੁ嬊誻吠썒₍䡃裃⁎剔乁⁇썂䆌䌠썈亍⁈䡔믡䎨䌠믡䆦吠왒鲻䝎쐠ꂺ⁉費⁃郄胃䰠뫡咠੝䈊ꇃ⁯썣澡쐠鎻쌠溡挠醻⁩뎻渠ꃃ⁹牴곃桮戠ꃃ⁹畱ꇃ琠썲溬⁨杮楨꫃⁮ꦻⱵ琠楨뫡璿欠뫡ⲿ瀠써璡琠楲믡溃瘠ꃃ琠楲믡溃欠慨⁩螻琠醻杮焠ꎺ⁮썬₽뫡涩琠놻⁣桴듃杮洠湩⁨慭杮琠꫃⁮䈢뫡炿挠믡憧䰠궺≴‮螻琠醻杮쐠욑ꎻ⁣썸禢搠믡溱⁧牴꫃⁮膻⁮ꎺ杮丠硥⹴獪‬썴掭⁨ꎻ⁰왣₡龻搠믡₯楬믡疇匠灵扡獡ⱥ쐠榑믡疁瀠醻⁩潣瑮楡敮⁲畱⁡潄正牥瘠ꃃ琠楲믡溃欠慨⁩桴믡掱琠
+--------------------------------------------------------------------------------
+LogLine: 774 | Type: VIEW_FILE | Lines: 42 | Garbage: False | Len: 2332
+  First: 1: import json
+  Last : 42: 
+--------------------------------------------------------------------------------
+LogLine: 780 | Type: VIEW_FILE | Lines: 19 | Garbage: False | Len: 1593
+  First: 1: import json
+  Last : 19: 
+--------------------------------------------------------------------------------

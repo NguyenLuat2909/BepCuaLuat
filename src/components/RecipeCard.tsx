@@ -1,5 +1,5 @@
 import React from "react";
-import { Clock, Heart, Users } from "lucide-react";
+import { Clock, Heart, Users, Utensils } from "lucide-react";
 import Pill from "./Pill";
 import { MEAL_TYPE_LABEL, DIFFICULTY_LABEL } from "@/data/constants";
 
@@ -43,8 +43,8 @@ export default function RecipeCard({
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center text-5xl">
-            🍽️
+          <div className="flex h-full w-full items-center justify-center text-[#9F6C3E]/50">
+            <Utensils size={48} strokeWidth={1.5} />
           </div>
         )}
         {recipe.is_favorite ? (

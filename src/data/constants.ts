@@ -11,10 +11,10 @@ export const COLORS = {
 };
 
 export const MEAL_TYPES = [
-  { value: "sang", label: "Bữa sáng", emoji: "🌅" },
-  { value: "trua", label: "Bữa trưa", emoji: "☀️" },
-  { value: "toi", label: "Bữa tối", emoji: "🌙" },
-  { value: "an_nhe", label: "Ăn nhẹ", emoji: "🍪" },
+  { value: "sang", label: "Bữa sáng" },
+  { value: "trua", label: "Bữa trưa" },
+  { value: "toi", label: "Bữa tối" },
+  { value: "an_nhe", label: "Ăn nhẹ" },
 ];
 
 export const MEAL_TYPE_LABEL: Record<string, string> = {
@@ -48,13 +48,13 @@ export const RECIPE_TAGS = [
 ];
 
 export const GROCERY_CATEGORIES = [
-  { value: "rau_cu", label: "Rau củ", emoji: "🥬" },
-  { value: "trai_cay", label: "Trái cây", emoji: "🍎" },
-  { value: "thit_ca_trung", label: "Thịt / cá / trứng", emoji: "🍳" },
-  { value: "sua_dam", label: "Sữa / đạm", emoji: "🥛" },
-  { value: "ngu_coc", label: "Ngũ cốc / tinh bột", emoji: "🌾" },
-  { value: "gia_vi", label: "Gia vị", emoji: "🧂" },
-  { value: "khac", label: "Khác", emoji: "🛒" },
+  { value: "rau_cu", label: "Rau củ" },
+  { value: "trai_cay", label: "Trái cây" },
+  { value: "thit_ca_trung", label: "Thịt / cá / trứng" },
+  { value: "sua_dam", label: "Sữa / đạm" },
+  { value: "ngu_coc", label: "Ngũ cốc / tinh bột" },
+  { value: "gia_vi", label: "Gia vị" },
+  { value: "khac", label: "Khác" },
 ];
 
 export const GROCERY_CATEGORY_LABEL: Record<string, string> = {

@@ -10,6 +10,7 @@ import {
   X,
   Clock,
   GripVertical,
+  Utensils,
 } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -350,8 +351,8 @@ export default function MealPlannerPage() {
                                   className="h-7 w-7 flex-shrink-0 rounded-lg object-cover"
                                 />
                               ) : (
-                                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#F3EAE4] text-sm">
-                                  🍲
+                                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-[#F3EAE4] text-[#9F6C3E]/70">
+                                  <Utensils size={14} />
                                 </span>
                               )}
                               <a
@@ -431,7 +432,9 @@ export default function MealPlannerPage() {
                             className="h-full w-full object-cover"
                           />
                         ) : (
-                          "🍽️"
+                          <span className="text-[#9F6C3E]/50">
+                            <Utensils size={24} />
+                          </span>
                         )}
                       </span>
                       <div className="min-w-0 flex-1">

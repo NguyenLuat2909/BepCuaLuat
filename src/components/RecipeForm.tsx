@@ -328,7 +328,7 @@ export default function RecipeForm({
                 >
                   {GROCERY_CATEGORIES.map((c) => (
                     <option key={c.value} value={c.value}>
-                      {c.emoji} {c.label}
+                      {c.label}
                     </option>
                   ))}
                 </select>

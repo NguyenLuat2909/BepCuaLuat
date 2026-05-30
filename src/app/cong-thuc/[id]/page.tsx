@@ -12,6 +12,7 @@ import {
   BookmarkPlus,
   ArrowLeft,
   Globe2,
+  Utensils,
 } from "lucide-react";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -169,8 +170,8 @@ export default function RecipeDetailPage({ params }: RecipeDetailPageProps) {
                 className="aspect-square w-full object-cover"
               />
             ) : (
-              <div className="flex aspect-square w-full items-center justify-center text-7xl">
-                🍽️
+              <div className="flex aspect-square w-full items-center justify-center text-[#9F6C3E]/50">
+                <Utensils size={64} strokeWidth={1.5} />
               </div>
             )}
           </div>
