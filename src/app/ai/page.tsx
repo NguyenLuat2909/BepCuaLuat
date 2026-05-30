@@ -42,51 +42,48 @@ export default function AIPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ goal }),
       });
-      
-      const text = await res.text();
-      let j;
-      try {
-        j = JSON.parse(text);
-      } catch (err) {
-        console.error("Server returned non-JSON response:", text);
-        throw new Error(`Server returned HTML error (Status ${res.status}). See console for details.`);
-      }
-
+      const j = await res.json();
       if (!res.ok) throw new Error(j.error || "Lỗi");
-
-      let parsedPlan = null;
-      if (j.plan) {
-        if (Array.isArray(j.plan)) {
-          parsedPlan = j.plan;
-        } else if (typeof j.plan === 'object' && Array.isArray(j.plan.plan)) {
-          parsedPlan = j.plan.plan;
-        }
-      }
-
-      // Hỗ trợ parse JSON trực tiếp ở Client nếu Server trả về content là chuỗi JSON
-      if (!parsedPlan && j.content) {
+      
+      let rawData = j.plan;
+      if (!rawData && j.content) {
         try {
-          const textVal = j.content;
-          const a = textVal.indexOf("{");
-          const b = textVal.indexOf("[");
-          const s = a === -1 ? b : (b === -1 ? a : Math.min(a, b));
-          const e = Math.max(textVal.lastIndexOf("}"), textVal.lastIndexOf("]"));
-          if (s !== -1 && e !== -1 && s < e) {
-            const slice = textVal.slice(s, e + 1);
-            const parsed = JSON.parse(slice);
-            if (Array.isArray(parsed)) {
-              parsedPlan = parsed;
-            } else if (parsed && Array.isArray(parsed.plan)) {
-              parsedPlan = parsed.plan;
-            }
-          }
-        } catch (err) {
-          console.warn("Client-side parse failed:", err);
+          const parsed = JSON.parse(j.content);
+          rawData = parsed;
+        } catch (e) {
+          // Không phải JSON chuẩn
         }
       }
 
-      if (parsedPlan) {
-        setPlanData(parsedPlan);
+      if (rawData) {
+        // Trường hợp 1: data là mảng trực tiếp
+        if (Array.isArray(rawData)) {
+          setPlanData(rawData);
+        }
+        // Trường hợp 2: data là object chứa thuộc tính plan dạng mảng
+        else if (rawData.plan && Array.isArray(rawData.plan)) {
+          setPlanData(rawData.plan);
+        }
+        // Trường hợp 3: data là object chứa các ngày (ví dụ: { "Thứ 2": {...}, "Thứ 3": {...} })
+        else if (typeof rawData === "object") {
+          const values = Object.values(rawData);
+          if (values.length > 0 && values.every(v => typeof v === "object")) {
+            // Chuyển đổi key thành nhãn nếu thiếu day_label
+            const normalized = Object.keys(rawData).map((key, i) => {
+              const val = rawData[key];
+              return {
+                day_label: val.day_label || key,
+                day_of_week: val.day_of_week || (i + 1),
+                meals: val.meals || val
+              };
+            });
+            setPlanData(normalized);
+          } else {
+            setPlanText(j.content || JSON.stringify(j.plan, null, 2));
+          }
+        } else {
+          setPlanText(j.content || JSON.stringify(j.plan, null, 2));
+        }
       } else {
         setPlanText(j.content || JSON.stringify(j.plan, null, 2));
       }
@@ -201,10 +198,46 @@ export default function AIPage() {
               disabled={planLoading}
             >
               <Sparkles size={14} />
-              {planLoading ? "Đang tạo..." : "Tạo thực đơn (Bảng)"}
+              {planLoading ? "Đang tạo..." : "Tạo thực đơn"}
             </SoftButton>
           </div>
-          {planText ? (
+          {planData ? (
+            <div className="mt-5 overflow-hidden rounded-2xl border border-[#E9DFDA] bg-white shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse text-left text-sm text-[#664226]">
+                  <thead>
+                    <tr className="bg-[#664226] text-white">
+                      <th className="whitespace-nowrap px-5 py-3 font-playfair-display text-sm font-semibold tracking-wider">Ngày</th>
+                      <th className="px-5 py-3 font-playfair-display text-sm font-semibold tracking-wider">Bữa sáng</th>
+                      <th className="px-5 py-3 font-playfair-display text-sm font-semibold tracking-wider">Bữa trưa</th>
+                      <th className="px-5 py-3 font-playfair-display text-sm font-semibold tracking-wider">Bữa tối</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[#E9DFDA]">
+                    {planData.map((day: any, idx: number) => (
+                      <tr 
+                        key={day.day_of_week || idx} 
+                        className="transition-colors duration-150 hover:bg-[#FAF4F1]/40 odd:bg-[#FAF4F1]/10"
+                      >
+                        <td className="whitespace-nowrap px-5 py-3.5 font-semibold text-[#9F6C3E]">
+                          {day.day_label || `Thứ ${day.day_of_week + 1}`}
+                        </td>
+                        <td className="px-5 py-3.5 text-[#4A3728] leading-relaxed">
+                          {day.meals?.sang || day.meals?.breakfast || "-"}
+                        </td>
+                        <td className="px-5 py-3.5 text-[#4A3728] leading-relaxed">
+                          {day.meals?.trua || day.meals?.lunch || "-"}
+                        </td>
+                        <td className="px-5 py-3.5 text-[#4A3728] leading-relaxed">
+                          {day.meals?.toi || day.meals?.dinner || "-"}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ) : planText ? (
             <div className="mt-4 rounded-2xl border border-[#E9DFDA] bg-[#FAF4F1] p-4 text-sm leading-relaxed text-[#664226]">
               <ReactMarkdown
                 components={{
@@ -221,35 +254,6 @@ export default function AIPage() {
               >
                 {planText}
               </ReactMarkdown>
-            </div>
-          ) : null}
-
-          {planData ? (
-            <div className="mt-4 overflow-hidden rounded-2xl border border-[#E9DFDA] bg-white">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse text-left text-sm text-[#664226]">
-                  <thead>
-                    <tr className="border-b border-[#E9DFDA] bg-[#F3EAE4] text-xs font-semibold uppercase tracking-wider text-[#9F6C3E]">
-                      <th className="p-4 font-semibold">Thứ / Ngày</th>
-                      <th className="p-4 font-semibold">Bữa sáng 🍳</th>
-                      <th className="p-4 font-semibold">Bữa trưa 🍲</th>
-                      <th className="p-4 font-semibold">Bữa tối 🍚</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[#E9DFDA]">
-                    {planData.map((day, idx) => (
-                      <tr key={day.day_of_week || idx} className="hover:bg-[#FAF4F1]/50 transition-colors">
-                        <td className="p-4 font-medium text-[#9F6C3E] whitespace-nowrap bg-[#FAF4F1]/30">
-                          {day.day_label || `Thứ ${day.day_of_week + 1}`}
-                        </td>
-                        <td className="p-4">{day.meals?.sang || day.meals?.breakfast || '-'}</td>
-                        <td className="p-4">{day.meals?.trua || day.meals?.lunch || '-'}</td>
-                        <td className="p-4">{day.meals?.toi || day.meals?.dinner || '-'}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             </div>
           ) : null}
         </div>
