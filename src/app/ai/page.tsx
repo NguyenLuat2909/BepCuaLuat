@@ -45,14 +45,33 @@ export default function AIPage() {
       const j = await res.json();
       if (!res.ok) throw new Error(j.error || "Lỗi");
       
-      let rawData = j.plan;
-      if (!rawData && j.content) {
+      const tryExtractJSON = (text: string) => {
+        if (!text) return null;
         try {
-          const parsed = JSON.parse(j.content);
-          rawData = parsed;
-        } catch (e) {
-          // Không phải JSON chuẩn
+          return JSON.parse(text);
+        } catch (err) {
+          try {
+            const a = text.indexOf("{");
+            const b = text.indexOf("[");
+            const s = a === -1 ? b : (b === -1 ? a : Math.min(a, b));
+            const e = Math.max(text.lastIndexOf("}"), text.lastIndexOf("]"));
+            if (s !== -1 && e !== -1 && s < e) {
+              const slice = text.slice(s, e + 1);
+              return JSON.parse(slice);
+            }
+          } catch (e2) {
+            // Không parse được
+          }
         }
+        return null;
+      };
+
+      let rawData = j.plan;
+      if (typeof rawData === "string") {
+        rawData = tryExtractJSON(rawData);
+      }
+      if (!rawData && j.content) {
+        rawData = tryExtractJSON(j.content);
       }
 
       if (rawData) {
